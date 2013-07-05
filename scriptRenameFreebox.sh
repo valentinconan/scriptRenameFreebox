@@ -10,7 +10,7 @@ freeboxPasswd='motDePasse'
 #Pour les caracteres speciaux, comme un & par exemple, mettre la valeur ASCII, soit %26
 
 #Chemin du repertoire de telechargement
-downloadDir='/Disque dur/Téléchargements/'
+downloadDir='/Disque dur/Tï¿½lï¿½chargements/'
 
 tmpFile=$( mktemp )
 
@@ -59,7 +59,7 @@ while true; do
 	id=$(echo ${item} | sed 's/.*,"id"://;s/,.*//')
     url=$(echo ${item} | sed 's/.*,"url":"//;s/".*//')
     url=$(echo ${url} | sed 's/\\//g')
-    realName=$( echo ${name} | sed 's/%20/ /g' | sed 's/%2B/+/g' | sed 's/%2C/,/g'| sed 's/%28/(/g'| sed 's/%29/)/g'| sed 's/%C3%A9/é/g' | sed 's/%C3/Ï/g' )
+    realName=$( echo ${name} | sed 's/%20/ /g' | sed 's/%2B/+/g' | sed 's/%2C/,/g'| sed 's/%28/(/g'| sed 's/%29/)/g'| sed 's/%C3%A9/ï¿½/g' | sed 's/%C3/ï¿½/g' )
 	# echo "name : $name"
 	# echo "rname: $realName "
 	# echo "id   : $id"
